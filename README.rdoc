@@ -1,0 +1,13 @@
+== An Experiment
+
+There is likely not much of use here but I got to thinking the other day,
+what if the entire web application was viewed as a set of state machines
+and the business logic surrounding what the changes in state mean.
+
+So I tried it out. Using the [end_state][1] gem, I first mapped out all of the
+things that can happen in the application as transitions in state and then laid
+out the business logic as a series of guards and concluders on each transition.
+
+Once I had it laid out, I filled in all the classes with implementation and wired up the controllers to use the machines.
+
+  [1]: https://github.com/Originate/end_state

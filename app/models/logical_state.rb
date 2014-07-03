@@ -1,0 +1,1 @@
+LogicalState = Struct.new(:state)

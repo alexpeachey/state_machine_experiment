@@ -1,0 +1,4 @@
+- flash.each do |name, msg|
+  div class=("alert alert-#{flash_message_class(name)}")
+    button.close aria-hidden="true" data-dismiss="alert" type="button"  &times;
+    = content_tag :div, msg.html_safe, :id => "flash_#{name}"
